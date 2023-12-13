@@ -5,7 +5,7 @@ const resp = document.querySelector("h3")
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
 
-    const num = Number(frm.imNumero.value)
+    const num = Number(frm.inNumero.value)
     let resposta = " " //não precisa verificar se é divisivel por 1
 
     for(let i = 1; i <= num/2; i++){   //não precisa compar mais que a metade do número.
@@ -13,5 +13,5 @@ frm.addEventListener("submit", (e) => {
             resposta = resposta + i + ", "  
         }
     }
-    resp.innerText = 'Divisores de ${num}: ${resposta}${num}.'
+    resp.innerText = `Divisores de ${num}: ${resposta}${num}.`
 })
